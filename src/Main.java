@@ -14,16 +14,21 @@ public class Main {
        panel.setBackground(new Color(255, 203, 236));
         panel.setLayout(new BorderLayout());
 
-        ImageIcon ed = new ImageIcon("Images/Ed-Sheeran-PNG.png");
-        ed.setImage(ed.getImage().getScaledInstance(300,300,Image.SCALE_DEFAULT));
-        JLabel picLabel = new JLabel(ed);
+   //ImageIcon ed = new ImageIcon("Images/Ed-Sheeran-PNG.png");
+
+        //ed.setImage(ed.getImage().getScaledInstance(300,60,Image.SCALE_DEFAULT));
+
+
+       //JLabel picLabel = new JLabel(ed);
 
 
 
-        panel.add(picLabel);
+
+    //   panel.add(picLabel);
 
 
         frame.add(panel);
+        frame.pack();
         frame.setVisible(true);
 
     }
