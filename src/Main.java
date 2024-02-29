@@ -10,22 +10,34 @@ public class Main {
         JFrame frame = new JFrame();
         frame.setSize(500,500);
 
-        JPanel panel = new JPanel();
+        MyPanel panel = new MyPanel();
        panel.setBackground(new Color(255, 203, 236));
         panel.setLayout(new BorderLayout());
 
-   //ImageIcon ed = new ImageIcon("Images/Ed-Sheeran-PNG.png");
+        JLabel title = new JLabel("Welcome to Ed Sheer-tag!");
+        JButton party = new JButton("Party Time!");
 
-        //ed.setImage(ed.getImage().getScaledInstance(300,60,Image.SCALE_DEFAULT));
+//   ImageIcon ed = new ImageIcon("Images/Ed-Sheeran-PNG.png");
+//
+//        ed.setImage(ed.getImage().getScaledInstance(300,60,Image.SCALE_DEFAULT));
+//
+//
+//       JLabel picLabel = new JLabel(ed);
+//
+//
+//
+//          panel.add(picLabel);
+
+        party.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
 
 
-       //JLabel picLabel = new JLabel(ed);
+            }
+        });
 
-
-
-
-    //   panel.add(picLabel);
-
+        panel.add(title, BorderLayout.NORTH);
+        panel.add(party, BorderLayout.SOUTH);
 
         frame.add(panel);
         frame.pack();

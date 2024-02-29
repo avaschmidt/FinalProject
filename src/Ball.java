@@ -2,32 +2,22 @@ import javax.swing.*;
 import java.awt.*;
 
 public class Ball {
-    private int x;
-    private int y;
+
     private int speedx;
     private int speedy;
     private int xx = (int)(Math.random()*480)+1;
     private int yy = (int)(Math.random()*480)+1;
-    private int sp = (int)(Math.random()*20)+1;
+    private int sp = (int)(Math.random()*30)+10;
 
     private ImageIcon ed = new ImageIcon("Images/Ed-Sheeran-PNG.png");
 
-    public Ball(int x, int y){
-        this.x = xx;
-        this.y = yy;
+    public Ball(){
         speedx = sp;
         speedy = sp;
     }
 
     public void draw(Graphics g2){
-        g2.drawImage(ed.getImage(), x, y, 300,60, null);
-    }
-
-    public int getX(){
-        return xx;
-    }
-    public int getY(){
-        return yy;
+        g2.drawImage(ed.getImage(), xx, yy, 300,60, null);
     }
 
 
@@ -42,8 +32,5 @@ public class Ball {
         }
 
     }
-
-
-
 
 }

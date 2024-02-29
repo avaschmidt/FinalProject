@@ -8,12 +8,12 @@ public class MyPanel extends JPanel {
     int yVel = 5;
 
     Ball edsheeran;
-
+   // Ball[] balls = new Ball[200];
 
     public MyPanel(){
        setBackground(Color.GREEN);
        setPreferredSize(new Dimension(500,500));
-        edsheeran = new Ball(200,200);
+        edsheeran = new Ball();
 
     }
 
