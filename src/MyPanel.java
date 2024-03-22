@@ -8,15 +8,20 @@ public class MyPanel extends JPanel {
     int yVel = 5;
 
     Ball edsheeran;
-   // Ball[] balls = new Ball[200];
+    static Ball[] balls = new Ball[200];
 
     public MyPanel(){
        setBackground(Color.GREEN);
        setPreferredSize(new Dimension(500,500));
         edsheeran = new Ball();
-
     }
 
+    public static void click(){
+        for (int i = 0; i<balls.length;i++){
+            balls[i] = new Ball();
+        }
+
+    }
 
 
    @Override
@@ -24,14 +29,11 @@ public class MyPanel extends JPanel {
         super.paintComponent(g);
         System.out.println("Hi");
 
-//       for (int i = 0; i<balls.length;i++){
-//           edsheeran.draw(g);
-//           edsheeran.move(getWidth()-20,getHeight()-20);
-//
-//       }
 
        edsheeran.draw(g);
        edsheeran.move(getWidth()-20,getHeight()-20);
+
+
 
        //delay the time
        try {
@@ -44,5 +46,6 @@ public class MyPanel extends JPanel {
 
        repaint();
     }
+
 
 }

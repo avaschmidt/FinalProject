@@ -17,7 +17,9 @@ public class Main {
         JLabel title = new JLabel("Welcome to Ed Sheer-tag!");
         JButton party = new JButton("Party Time!");
 
-//   ImageIcon ed = new ImageIcon("Images/Ed-Sheeran-PNG.png");
+
+//
+//  ImageIcon ed = new ImageIcon("Images/Ed-Sheeran-PNG.png");
 //
 //        ed.setImage(ed.getImage().getScaledInstance(300,60,Image.SCALE_DEFAULT));
 //
@@ -31,6 +33,7 @@ public class Main {
         party.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+
 
 
             }
