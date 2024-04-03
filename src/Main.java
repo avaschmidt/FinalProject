@@ -15,7 +15,7 @@ public class Main {
         panel.setLayout(new BorderLayout());
 
         JLabel title = new JLabel("Welcome to Ed Sheer-tag!");
-        JButton party = new JButton("Party Time!");
+//        JButton party = new JButton("Party Time!");
 
 
 //
@@ -30,17 +30,17 @@ public class Main {
 //
 //          panel.add(picLabel);
 
-        party.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-
-
-
-            }
-        });
+//        party.addActionListener(new ActionListener() {
+//            @Override
+//            public void actionPerformed(ActionEvent e) {
+//
+//
+//
+//            }
+//        });
 
         panel.add(title, BorderLayout.NORTH);
-        panel.add(party, BorderLayout.SOUTH);
+//        panel.add(party, BorderLayout.SOUTH);
 
         frame.add(panel);
         frame.pack();

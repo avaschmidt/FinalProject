@@ -12,15 +12,25 @@ public class Ball {
     private ImageIcon ed = new ImageIcon("Images/Ed-Sheeran-PNG.png");
 
     public Ball(){
-        speedx = sp;
-        speedy = sp;
+        speedx = 2;
+        speedy = 2;
     }
 
     public void draw(Graphics g2){
         g2.drawImage(ed.getImage(), xx, yy, 300,60, null);
     }
 
+public int getX(){
+        return xx;
+}
+    public int getY(){
+        return yy;
+    }
 
+    public void stop(){
+        speedx = 0;
+        speedy = 0;
+    }
     public void move(int w, int l){
         xx += speedx;
         yy += speedy;
