@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bab86aae-6502-4cc1-a6da-f20d6d17a227" name="Changes" comment="Created a press action listener">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MyPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyPanel.java" afterDir="false" />
+    <list default="true" id="bab86aae-6502-4cc1-a6da-f20d6d17a227" name="Changes" comment="Confirmed stop method works">
+      <change beforePath="$PROJECT_DIR$/src/Ball.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ball.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,7 +110,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712149718446</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Confirmed stop method works">
+      <option name="closed" value="true" />
+      <created>1713445148679</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1713445148679</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -131,6 +138,7 @@
     <MESSAGE value="Added button" />
     <MESSAGE value="Not sure what I did here" />
     <MESSAGE value="Created a press action listener" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created a press action listener" />
+    <MESSAGE value="Confirmed stop method works" />
+    <option name="LAST_COMMIT_MESSAGE" value="Confirmed stop method works" />
   </component>
 </project>

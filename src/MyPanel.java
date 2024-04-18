@@ -32,6 +32,7 @@ public class MyPanel extends JPanel {
 
 
 
+
     }
 
     public static void click(){

@@ -12,8 +12,8 @@ public class Ball {
     private ImageIcon ed = new ImageIcon("Images/Ed-Sheeran-PNG.png");
 
     public Ball(){
-        speedx = 2;
-        speedy = 2;
+        speedx = 5;
+        speedy = 5;
     }
 
     public void draw(Graphics g2){
@@ -28,8 +28,14 @@ public int getX(){
     }
 
     public void stop(){
-        speedx = 0;
-        speedy = 0;
+        if (speedy != 0 && speedx != 0){
+            speedx = 0;
+            speedy = 0;
+        }
+        else{
+            speedx = 5;
+            speedy = 5;
+        }
     }
     public void move(int w, int l){
         xx += speedx;

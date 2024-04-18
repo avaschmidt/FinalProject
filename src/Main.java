@@ -15,7 +15,7 @@ public class Main {
         panel.setLayout(new BorderLayout());
 
         JLabel title = new JLabel("Welcome to Ed Sheer-tag!");
-//        JButton party = new JButton("Party Time!");
+//       JButton party = new JButton("Party Time!");
 
 
 //
