@@ -23,9 +23,9 @@ public class MyPanel extends JPanel {
             @Override
             public void mousePressed(MouseEvent e) {
                 System.out.println(e.getX() + "," + e.getY());
-                if((edsheeran.getX() <= e.getX()+20 && edsheeran.getX() >= e.getX()-20) && (edsheeran.getY() <= e.getY()+20 && edsheeran.getY() >= e.getY()-20)){
+               // if((edsheeran.getX() <= e.getX()+100 && edsheeran.getX() >= e.getX()-100) && (edsheeran.getY() <= e.getY()+100 && edsheeran.getY() >= e.getY()-100)){
                     edsheeran.stop();
-                }
+               // }
 
             }
         });
