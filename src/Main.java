@@ -16,6 +16,16 @@ public class Main {
 
         JLabel title = new JLabel("Welcome to Ed Sheer-tag!");
 //       JButton party = new JButton("Party Time!");
+        //JButton easy = new JButton("Easy");
+       // JButton medium = new JButton("Medium");
+        JButton hard = new JButton("Hard");
+
+        hard.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+            }
+        });
 
 
 //
@@ -41,6 +51,9 @@ public class Main {
 
         panel.add(title, BorderLayout.NORTH);
 //        panel.add(party, BorderLayout.SOUTH);
+//        panel.add(easy, BorderLayout.);
+//        panel.add(medium, BorderLayout.);
+       panel.add(hard, BorderLayout.SOUTH);
 
         frame.add(panel);
         frame.pack();

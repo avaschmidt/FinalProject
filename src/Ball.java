@@ -5,6 +5,8 @@ public class Ball {
 
     private int speedx;
     private int speedy;
+    private int speedxog;
+    private int speedyog;
     private int xx = (int)(Math.random()*480)+1;
     private int yy = (int)(Math.random()*480)+1;
     private int sp = (int)(Math.random()*30)+10;
@@ -27,14 +29,20 @@ public int getX(){
         return yy;
     }
 
+    public void hardMode(){
+        speedx = 10;
+        speedy = 10;
+    }
     public void stop(){
+        speedxog = speedx;
+        speedyog = speedy;
         if (speedy != 0 && speedx != 0){
             speedx = 0;
             speedy = 0;
         }
         else{
-            speedx = 5;
-            speedy = 5;
+            speedx = speedxog;
+            speedy = speedyog;
         }
     }
     public void move(int w, int l){
