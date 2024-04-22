@@ -1,9 +1,7 @@
 import javax.swing.*;
 import javax.swing.plaf.synth.SynthOptionPaneUI;
 import java.awt.*;
-import java.awt.event.MouseAdapter;
-import java.awt.event.MouseEvent;
-import java.awt.event.MouseListener;
+import java.awt.event.*;
 
 public class MyPanel extends JPanel {
     int xLoc = (int)(Math.random()*480)+1;
@@ -11,10 +9,12 @@ public class MyPanel extends JPanel {
     int xVel = 5;
     int yVel = 5;
 
-    Ball edsheeran;
+    public static Ball edsheeran;
     static Ball[] balls = new Ball[200];
 
     public MyPanel(){
+
+
        setBackground(Color.GREEN);
        setPreferredSize(new Dimension(500,500));
         edsheeran = new Ball();
@@ -29,6 +29,7 @@ public class MyPanel extends JPanel {
 
             }
         });
+
 
 
 

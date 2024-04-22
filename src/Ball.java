@@ -40,9 +40,13 @@ public int getX(){
             speedx = 0;
             speedy = 0;
         }
+        else if (speedxog == 10 && speedyog == 10){
+           speedx = 10;
+           speedy = 10;
+        }
         else{
-            speedx = speedxog;
-            speedy = speedyog;
+            speedx = 5;
+            speedy = 5;
         }
     }
     public void move(int w, int l){

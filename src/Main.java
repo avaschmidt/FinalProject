@@ -20,13 +20,15 @@ public class Main {
        // JButton medium = new JButton("Medium");
         JButton hard = new JButton("Hard");
 
+
         hard.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+               // Ball.hardMode();
+                System.out.println("PRESSED!");
+                MyPanel.edsheeran.hardMode();
             }
         });
-
 
 //
 //  ImageIcon ed = new ImageIcon("Images/Ed-Sheeran-PNG.png");
@@ -53,7 +55,7 @@ public class Main {
 //        panel.add(party, BorderLayout.SOUTH);
 //        panel.add(easy, BorderLayout.);
 //        panel.add(medium, BorderLayout.);
-       panel.add(hard, BorderLayout.SOUTH);
+        panel.add(hard, BorderLayout.SOUTH);
 
         frame.add(panel);
         frame.pack();
