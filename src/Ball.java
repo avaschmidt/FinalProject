@@ -10,6 +10,7 @@ public class Ball {
     private int xx = (int)(Math.random()*480)+1;
     private int yy = (int)(Math.random()*480)+1;
     private int sp = (int)(Math.random()*30)+10;
+    private int count = 0;
 
     private ImageIcon ed = new ImageIcon("Images/Ed-Sheeran-PNG.png");
 
@@ -32,6 +33,7 @@ public int getX(){
     public void hardMode(){
         speedx = 10;
         speedy = 10;
+        count = 1;
     }
     public void stop(){
         speedxog = speedx;
@@ -40,13 +42,15 @@ public int getX(){
             speedx = 0;
             speedy = 0;
         }
-        else if (speedxog == 10 && speedyog == 10){
-           speedx = 10;
-           speedy = 10;
-        }
         else{
-            speedx = 5;
-            speedy = 5;
+            if (count == 1){
+                speedx = 10;
+                speedy = 10;
+            }
+            else{
+                speedx = 5;
+                speedy = 5;
+            }
         }
     }
     public void move(int w, int l){
