@@ -11,6 +11,7 @@ public class Ball {
     private int yy = (int)(Math.random()*480)+1;
     private int sp = (int)(Math.random()*30)+10;
     private int count = 0;
+   // private int count2 = 0;
 
     private ImageIcon ed = new ImageIcon("Images/Ed-Sheeran-PNG.png");
 
@@ -35,6 +36,13 @@ public int getX(){
         speedy = 10;
         count = 1;
     }
+
+    public void easyMode(){
+        speedx = 1;
+        speedy = 1;
+        count = 2;
+    }
+
     public void stop(){
         speedxog = speedx;
         speedyog = speedy;
@@ -47,9 +55,13 @@ public int getX(){
                 speedx = 10;
                 speedy = 10;
             }
+            else if (count == 2){
+                speedx = 1;
+                speedy = 1;
+            }
             else{
-                speedx = 5;
                 speedy = 5;
+                speedx = 5;
             }
         }
     }

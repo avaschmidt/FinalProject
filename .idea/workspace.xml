@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bab86aae-6502-4cc1-a6da-f20d6d17a227" name="Changes" comment="Hard Mode!">
+    <list default="true" id="bab86aae-6502-4cc1-a6da-f20d6d17a227" name="Changes" comment="Hard Mode updated">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ball.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ball.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,7 +144,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713793751444</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Hard Mode updated">
+      <option name="closed" value="true" />
+      <created>1714741206251</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1714741206251</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -165,6 +175,7 @@
     <MESSAGE value="Confirmed stop method works" />
     <MESSAGE value="new buttons" />
     <MESSAGE value="Hard Mode!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Hard Mode!" />
+    <MESSAGE value="Hard Mode updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="Hard Mode updated" />
   </component>
 </project>

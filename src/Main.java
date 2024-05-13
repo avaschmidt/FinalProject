@@ -14,19 +14,32 @@ public class Main {
        panel.setBackground(new Color(255, 203, 236));
         panel.setLayout(new BorderLayout());
 
-        JLabel title = new JLabel("Welcome to Ed Sheer-tag!");
-//       JButton party = new JButton("Party Time!");
-        //JButton easy = new JButton("Easy");
-       // JButton medium = new JButton("Medium");
-        JButton hard = new JButton("Hard");
+        MyPanel panel2 = new MyPanel();
+        panel2.setBackground(new Color(255, 203, 236));
+        panel2.setLayout(new BorderLayout());
 
+        JLabel title = new JLabel("Welcome to Ed Shee-run!");
+//       JButton party = new JButton("Party Time!");
+        JButton slow = new JButton("Slow");
+       // JButton medium = new JButton("Medium");
+        JButton hard = new JButton("Fast");
+        
 
         hard.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                // Ball.hardMode();
-                System.out.println("PRESSED!");
+                System.out.println("FAST!");
                 MyPanel.edsheeran.hardMode();
+            }
+        });
+
+        slow.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                // Ball.hardMode();
+                System.out.println("SLOW!");
+                MyPanel.edsheeran.easyMode();
             }
         });
 
@@ -51,13 +64,14 @@ public class Main {
 //            }
 //        });
 
-        panel.add(title, BorderLayout.NORTH);
+        panel2.add(title, BorderLayout.CENTER);
 //        panel.add(party, BorderLayout.SOUTH);
-//        panel.add(easy, BorderLayout.);
-//        panel.add(medium, BorderLayout.);
-        panel.add(hard, BorderLayout.SOUTH);
+         panel2.add(slow, BorderLayout.NORTH);
+//        panel2.add(medium, BorderLayout.);
+        panel2.add(hard, BorderLayout.SOUTH);
 
         frame.add(panel);
+        frame.add(panel2);
         frame.pack();
         frame.setVisible(true);
 
