@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bab86aae-6502-4cc1-a6da-f20d6d17a227" name="Changes" comment="Hard Mode updated">
+    <list default="true" id="bab86aae-6502-4cc1-a6da-f20d6d17a227" name="Changes" comment="Created an easy mode and added another panel to the screen">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Ball.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ball.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -152,7 +151,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714741206251</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Created an easy mode and added another panel to the screen">
+      <option name="closed" value="true" />
+      <created>1715606988602</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1715606988602</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -176,6 +183,7 @@
     <MESSAGE value="new buttons" />
     <MESSAGE value="Hard Mode!" />
     <MESSAGE value="Hard Mode updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="Hard Mode updated" />
+    <MESSAGE value="Created an easy mode and added another panel to the screen" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created an easy mode and added another panel to the screen" />
   </component>
 </project>

@@ -9,13 +9,15 @@ public class Main {
     public static void main(String[] args) {
         JFrame frame = new JFrame();
         frame.setSize(500,500);
+        frame.setLayout(new BorderLayout());
 
         MyPanel panel = new MyPanel();
        panel.setBackground(new Color(255, 203, 236));
+
         panel.setLayout(new BorderLayout());
 
-        MyPanel panel2 = new MyPanel();
-        panel2.setBackground(new Color(255, 203, 236));
+        JPanel panel2 = new JPanel();
+        panel2.setBackground(new Color(234, 224, 224));
         panel2.setLayout(new BorderLayout());
 
         JLabel title = new JLabel("Welcome to Ed Shee-run!");
@@ -64,14 +66,14 @@ public class Main {
 //            }
 //        });
 
-        panel2.add(title, BorderLayout.CENTER);
+        panel.add(title, BorderLayout.NORTH);
 //        panel.add(party, BorderLayout.SOUTH);
          panel2.add(slow, BorderLayout.NORTH);
 //        panel2.add(medium, BorderLayout.);
         panel2.add(hard, BorderLayout.SOUTH);
 
-        frame.add(panel);
-        frame.add(panel2);
+        frame.add(panel, BorderLayout.NORTH);
+        frame.add(panel2, BorderLayout.SOUTH);
         frame.pack();
         frame.setVisible(true);
 
