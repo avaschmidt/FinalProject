@@ -10,11 +10,13 @@ public class MyPanel extends JPanel {
     int yVel = 5;
 
     public static Ball edsheeran;
+    public static Ball evilEd;
     static Ball[] balls = new Ball[200];
 
     public MyPanel(){
 
-
+        evilEd = new Ball();
+        evilEd.setFocusable(false);
        setBackground(Color.GREEN);
        setPreferredSize(new Dimension(500,500));
         edsheeran = new Ball();
@@ -43,6 +45,11 @@ public class MyPanel extends JPanel {
 
     }
 
+    public static void evilMode(){
+        evilEd.setFocusable(true);
+        
+    }
+
 
     @Override
     public void paintComponent(Graphics g){
@@ -52,6 +59,8 @@ public class MyPanel extends JPanel {
 
        edsheeran.draw(g);
        edsheeran.move(getWidth()-20,getHeight()-20);
+        evilEd.drawEvil();
+    evilEd.move(getWidth()-20,getHeight()-20);
 
 
 
