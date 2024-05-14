@@ -25,7 +25,7 @@ public class Main {
         panel3.setLayout(new BorderLayout());
 
         JLabel title = new JLabel("Welcome to Ed Shee-run!");
-//       JButton party = new JButton("Party Time!");
+       JButton party = new JButton("Party Time!");
         JButton slow = new JButton("Slow");
         JButton medium = new JButton("Regular");
         JButton hard = new JButton("Fast");
@@ -91,11 +91,11 @@ public class Main {
 //        });
 
         panel.add(title, BorderLayout.NORTH);
-//        panel.add(party, BorderLayout.SOUTH);
          panel2.add(slow, BorderLayout.NORTH);
         panel2.add(medium, BorderLayout.CENTER);
         panel2.add(hard, BorderLayout.SOUTH);
         panel3.add(evil, BorderLayout.NORTH);
+        panel3.add(party, BorderLayout.CENTER);
 
         frame.add(panel, BorderLayout.NORTH);
         frame.add(panel2, BorderLayout.CENTER);
