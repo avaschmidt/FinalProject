@@ -14,7 +14,7 @@ public class Ball {
    // private int count2 = 0;
 
     private ImageIcon ed = new ImageIcon("Images/Ed-Sheeran-PNG.png");
-    private ImageIcon evilEd = new ImageIcon("Images/Evil-Ed.png");
+   // private ImageIcon evilEd = new ImageIcon("Images/Evil-Ed.png");
 
     public Ball(){
         speedx = 5;
@@ -25,9 +25,9 @@ public class Ball {
         g2.drawImage(ed.getImage(), xx, yy, 300,60, null);
     }
 
-    public void drawEvil(Graphics g2){
-        g2.drawImage(evilEd.getImage(), xx, yy, 300, 60, null);
-    }
+  //  public void drawEvil(Graphics g2){
+     //   g2.drawImage(evilEd.getImage(), xx, yy, 300, 60, null);
+  ///  }
 
 public int getX(){
         return xx;

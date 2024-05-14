@@ -44,7 +44,7 @@ public class Main {
         slow.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                // Ball.hardMode();
+
                 System.out.println("SLOW!");
                 MyPanel.edsheeran.easyMode();
             }
@@ -53,7 +53,7 @@ public class Main {
         medium.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                // Ball.hardMode();
+
                 System.out.println("RESET!");
                 MyPanel.edsheeran.regMode();
             }
@@ -62,9 +62,10 @@ public class Main {
         evil.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                // Ball.hardMode();
-                System.out.println("RESET!");
-                MyPanel.edsheeran.evil();
+                System.out.println("EVIL ACTIVATE!");
+                MyPanel.evilEd.evilMode();
+               // MyPanel.edsheeran.evil();
+
             }
         });
 
@@ -98,7 +99,7 @@ public class Main {
 
         frame.add(panel, BorderLayout.NORTH);
         frame.add(panel2, BorderLayout.CENTER);
-        frame.add(panel2, BorderLayout.SOUTH);
+        frame.add(panel3, BorderLayout.SOUTH);
         frame.pack();
         frame.setVisible(true);
 

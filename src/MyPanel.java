@@ -10,13 +10,15 @@ public class MyPanel extends JPanel {
     int yVel = 5;
 
     public static Ball edsheeran;
-    public static Ball evilEd;
-    static Ball[] balls = new Ball[200];
+    public static Evil evilEd;
+   // static Ball[] balls = new Ball[200];
 
     public MyPanel(){
 
-        evilEd = new Ball();
-        evilEd.setFocusable(false);
+        evilEd = new Evil();
+        evilEd.setSizeSmall();
+        //evilEd.start();
+       // evilEd.setFocusable(false);
        setBackground(Color.GREEN);
        setPreferredSize(new Dimension(500,500));
         edsheeran = new Ball();
@@ -27,6 +29,7 @@ public class MyPanel extends JPanel {
                 System.out.println(e.getX() + "," + e.getY());
                // if((edsheeran.getX() <= e.getX()+100 && edsheeran.getX() >= e.getX()-100) && (edsheeran.getY() <= e.getY()+100 && edsheeran.getY() >= e.getY()-100)){
                     edsheeran.stop();
+                    evilEd.stop();
                // }
 
             }
@@ -38,17 +41,17 @@ public class MyPanel extends JPanel {
 
     }
 
-    public static void click(){
-        for (int i = 0; i<balls.length;i++){
-            balls[i] = new Ball();
-        }
+//    public static void click(){
+//        for (int i = 0; i<balls.length;i++){
+//            balls[i] = new Ball();
+//        }
+//
+//    }
 
-    }
-
-    public static void evilMode(){
-        evilEd.setFocusable(true);
-        
-    }
+//    public static void evilMode(){
+//        //evilEd.setFocusable(true);
+//
+//    }
 
 
     @Override
@@ -58,9 +61,11 @@ public class MyPanel extends JPanel {
 
 
        edsheeran.draw(g);
-       edsheeran.move(getWidth()-20,getHeight()-20);
-        evilEd.drawEvil();
-    evilEd.move(getWidth()-20,getHeight()-20);
+       edsheeran.move(getWidth()-30,getHeight()-30);
+       evilEd.draw(g);
+       evilEd.move(getWidth()-30,getHeight()-30);
+       // evilEd.drawEvil();
+    //evilEd.move(getWidth()-20,getHeight()-20);
 
 
 
