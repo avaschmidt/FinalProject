@@ -11,7 +11,7 @@ public class MyPanel extends JPanel {
 
     public static Ball edsheeran;
     public static Evil evilEd;
-    public static Party[] eds = new Party[100];
+    public static Party[] eds = new Party[200];
 // 10
     public MyPanel(){
 
@@ -34,7 +34,7 @@ public class MyPanel extends JPanel {
                // if((edsheeran.getX() <= e.getX()+100 && edsheeran.getX() >= e.getX()-100) && (edsheeran.getY() <= e.getY()+100 && edsheeran.getY() >= e.getY()-100)){
                     edsheeran.stop();
                     evilEd.stop();
-                for(int i = 0; i<100; i++){eds[i].stop();}
+                for(int i = 0; i<200; i++){eds[i].stop();}
                     //10
                // }
 
@@ -70,7 +70,7 @@ public class MyPanel extends JPanel {
        edsheeran.move(getWidth()-30,getHeight()-30);
        evilEd.draw(g);
        evilEd.move(getWidth()-30,getHeight()-30);
-        for(int i = 0; i<100; i++){
+        for(int i = 0; i<200; i++){
             eds[i].draw(g);
             eds[i].move(getWidth()-30,getHeight()-30);
         }

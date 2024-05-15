@@ -55,7 +55,7 @@ public class Main {
             @Override
             public void actionPerformed(ActionEvent e) {
 
-                System.out.println("RESET!");
+                System.out.println("REG!");
                 MyPanel.edsheeran.regMode();
             }
         });
@@ -65,6 +65,7 @@ public class Main {
             public void actionPerformed(ActionEvent e) {
                 System.out.println("EVIL ACTIVATE!");
                 MyPanel.evilEd.evilMode();
+                panel.setBackground(new Color(248, 37, 37));
                // MyPanel.edsheeran.evil();
 
             }
@@ -74,17 +75,18 @@ public class Main {
             @Override
             public void actionPerformed(ActionEvent e) {
                 System.out.println("PARTY TIME!");
-                for(int i = 0; i<100; i++){MyPanel.eds[i].partyTime();}
-//10
+                for(int i = 0; i<200; i++){MyPanel.eds[i].partyTime();}
+                panel.setBackground(new Color(0, 255, 160));
             }
         });
 
-        party.addActionListener(new ActionListener() {
+        reset.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 System.out.println("RESET");
-                
-
+                for(int i = 0; i<200; i++){MyPanel.eds[i].setSizeSmall();}
+                MyPanel.evilEd.setSizeSmall();
+                panel.setBackground(new Color(255, 203, 236));
             }
         });
 
