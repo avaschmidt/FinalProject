@@ -25,11 +25,12 @@ public class Main {
         panel3.setLayout(new BorderLayout());
 
         JLabel title = new JLabel("Welcome to Ed Shee-run!");
-       JButton party = new JButton("Party Time!");
         JButton slow = new JButton("Slow");
         JButton medium = new JButton("Regular");
         JButton hard = new JButton("Fast");
         JButton evil = new JButton("Do Not Push!");
+        JButton party = new JButton("Party Time!");
+        JButton reset = new JButton("Reset");
         
 
         hard.addActionListener(new ActionListener() {
@@ -69,6 +70,24 @@ public class Main {
             }
         });
 
+        party.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                System.out.println("PARTY TIME!");
+                for(int i = 0; i<100; i++){MyPanel.eds[i].partyTime();}
+//10
+            }
+        });
+
+        party.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                System.out.println("RESET");
+                
+
+            }
+        });
+
 //
 //  ImageIcon ed = new ImageIcon("Images/Ed-Sheeran-PNG.png");
 //
@@ -96,6 +115,7 @@ public class Main {
         panel2.add(hard, BorderLayout.SOUTH);
         panel3.add(evil, BorderLayout.NORTH);
         panel3.add(party, BorderLayout.CENTER);
+        panel3.add(reset, BorderLayout.SOUTH);
 
         frame.add(panel, BorderLayout.NORTH);
         frame.add(panel2, BorderLayout.CENTER);

@@ -11,12 +11,16 @@ public class MyPanel extends JPanel {
 
     public static Ball edsheeran;
     public static Evil evilEd;
-   // static Ball[] balls = new Ball[200];
-
+    public static Party[] eds = new Party[100];
+// 10
     public MyPanel(){
 
         evilEd = new Evil();
         evilEd.setSizeSmall();
+        for(int i = 0; i<eds.length; i++){
+            eds[i] = new Party();
+            eds[i].setSizeSmall();
+        }
         //evilEd.start();
        // evilEd.setFocusable(false);
        setBackground(Color.GREEN);
@@ -30,6 +34,8 @@ public class MyPanel extends JPanel {
                // if((edsheeran.getX() <= e.getX()+100 && edsheeran.getX() >= e.getX()-100) && (edsheeran.getY() <= e.getY()+100 && edsheeran.getY() >= e.getY()-100)){
                     edsheeran.stop();
                     evilEd.stop();
+                for(int i = 0; i<100; i++){eds[i].stop();}
+                    //10
                // }
 
             }
@@ -38,7 +44,7 @@ public class MyPanel extends JPanel {
 
 
 
-
+//50
     }
 
 //    public static void click(){
@@ -64,8 +70,13 @@ public class MyPanel extends JPanel {
        edsheeran.move(getWidth()-30,getHeight()-30);
        evilEd.draw(g);
        evilEd.move(getWidth()-30,getHeight()-30);
-       // evilEd.drawEvil();
-    //evilEd.move(getWidth()-20,getHeight()-20);
+        for(int i = 0; i<100; i++){
+            eds[i].draw(g);
+            eds[i].move(getWidth()-30,getHeight()-30);
+        }
+        
+           
+       
 
 
 
